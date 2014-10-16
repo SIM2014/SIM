@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="../styles/crud.css">
+    </head>
+
+    <body>
+        <div id="group">
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">DATOS PERSONALES</a></li>
+                    <li><a href="#">DATOS DE USUARIO</a></li>
+                    <li><a href="#">DIRECCI&Oacute;N</a></li>
+                    <li><a href="#">AGENDA</a></li>
+                    <li><a href="#">DIRECTORIO TELEF&Oacute;NICO</a></li>
+                </ul>
+            </nav>
+
+            <nav id="toolbar">
+                <ul>
+                    <li><a href="#"><img src="../icons/icon_add.png" alt="" width="40" height="40"></a></li>
+                    <li><a href="#"><img src="../icons/icon_update.png" alt="" width="40" height="40"></a></li>
+                    <li><a href="#"><img src="../icons/icon_delete.png" alt="" width="40" height="40"></a></li>
+                    <li><a href="#"><img src="../icons/icon_cancel.png" alt="" width="40" height="40"></a></li>
+                </ul>
+            </nav>
+
+            <section id="personal_data">
+                <table id="table1">
+                    <tr>
+                        <td>
+                            <img src="../icons/profile.png" alt="User">
+                        </td>
+                        <td>
+                            <input type="text" name="curp" value="" placeholder="CURP">
+                            <br>
+                            <input type="text" name="name" value="" placeholder="Nombre(s)">
+                            <input type="text" name="paternal_surname" value="" placeholder="Apellido Paterno">
+                            <input type="text" name="maternal_surname" value="" placeholder="Apellido Materno">
+                            <br>
+                            <input type="date" name="birthdate" value="">
+                            <br>
+                            <input type="text" name="sex" value="" placeholder="Sexo">
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="address">
+                <input type="text" name="street" placeholder="Calle">
+                <input type="text" name="internal_number" placeholder="No. Interno">
+                <input type="text" name="external_number" placeholder="No. Externo">
+                <br>
+                <input type="text" name="colonia" placeholder="Colonia">
+                <br>
+                <input type="number" name="postal_code" placeholder="C&oacute;digo Postal">
+                <br>
+                <input type="text" name="country" placeholder="Pa&iacute;s">
+                <input type="text" name="state" placeholder="Estado">
+                <br>
+                <input type="text" name="municipality" placeholder="Municipio">
+                <input type="text" name="locality" placeholder="Localidad">
+                <br>
+            </section>
+
+            <section id="user_data">
+                <input type="text" name="user" value="" placeholder="Usuario">
+                <br>
+                <input type="password" name="password1" value="" placeholder="Contraseña Actual">
+                <br>
+                <input type="password" name="password21" value="" placeholder="Nueva Contraseña">
+                <input type="password" name="password22" value="" placeholder="Confirmar Nueva Contraseña">
+                <br>
+                <input type="email" name="correo" value="" placeholder="user@example.com">
+            </section>
+
+            <section id="agenda">
+                <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=200&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bqradeejjf8g6b5lfa2f405d10%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FMexico_City" style=" border-width:0 " width="350" height="200" frameborder="0" scrolling="no"></iframe>
+                <br>
+                <embed wmode="transparent" src="http://www.poodwaddle.com/clock10" width="175" height="175" type="application/x-shockwave-flash" bgcolor="#CCCCCC" />
+                <br>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="text" name="event" placeholder="Describa el evento">
+                <select>
+                    <option value="default" selected>Seleccione</option>
+                    <option value="meeting">Reuni&oacute;n</option>
+                    <option value="quote">Cita</option>
+                    <option value="exit">Salida</option>
+                </select>
+
+                <table id="table2">
+                    <tr>
+                        <td width="250">Fecha</td>
+                        <td width="250">Hora</td>
+                        <td width="600">Descripci&oacute;n</td>
+                        <td width="300">Lugar</td>
+                        <td width="250">Tipo</td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section id="phonebook">
+                <input type="text" name="contact" value="" placeholder="Contacto">
+                <input type="tel" name="phone" value="" placeholder="Telefono">
+                <input type="number" name="extension" value="" placeholder="Extension">
+                <select>
+                    <option value="">Celular</option>
+                    <option value="">Hogar</option>
+                    <option value="">Oficina</option>
+                    <option value="">Otro</option>
+                </select>
+                <input type="email" name="email" value="" placeholder="user@example.com">
+                <table id="table3">
+                    <tr>
+                        <td width="400">Nombre</td>
+                        <td width="250">Tel&eacute;fono</td>
+                        <td width="250">Extensi&oacute;n</td>
+                        <td width="250">Tipo</td>
+                        <td width="400">E-Mail</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

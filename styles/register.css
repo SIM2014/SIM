@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/10/2014, 04:19:50 PM
+    Author     : MarcoAntonio
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+}
+
+form{
+    width: 625px;
+    margin: 10px auto;
+    border: 1px solid #0099ff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 5px 5px 2px #FFF,
+        5px 5px 2px #0099ff;
+}
+
+h1{
+    color: #0066ff;
+    font-weight: normal;
+    margin: 10px;
+}
+h2{
+    color: #0066ff;
+    font-weight: normal;
+    margin: 10px;
+}
+
+#personal_data{
+    text-align: left;
+    border: 1px solid #0099ff;
+    margin: 20px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#user_data{
+    text-align: left;
+    border: 1px solid #0099ff;
+    margin: 20px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+    height: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+#btns{
+    text-align: right;
+}
+button{
+    width: 125px;
+    margin: 30px;
+    height: 35px;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: medium;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 2px 2px 0px #ccc;
+    -moz-box-shadow: 2px 2px 0px #ccc;
+    -webkit-box-shadow: 2px 2px 0px #ccc;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#7373FF));
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #7373FF);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #7373FF);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #7373FF);
+    background-image: -o-linear-gradient(top, #FFFFFF, #7373FF);
+    background-image: linear-gradient(top, #FFFFFF, #7373FF);
+
+}
+button:hover{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7373FF), to(#FFFFFF));
+    background-image: -webkit-linear-gradient(top, #7373FF, #FFFFFF);
+    background-image: -moz-linear-gradient(top, #7373FF, #FFFFFF);
+    background-image: -ms-linear-gradient(top, #7373FF, #FFFFFF);
+    background-image: -o-linear-gradient(top, #7373FF, #FFFFFF);
+    background-image: linear-gradient(top, #7373FF, #FFFFFF);
+}

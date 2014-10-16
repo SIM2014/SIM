@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registro de Usuario</title>
+        <link rel="stylesheet" href="../styles/register.css">
+        <script src="scripts/register_user.js"></script>
+    </head>
+
+    <body>
+        <form name="register_user" action="../sql/register_user.php" method="post" enctype="multipart/form-data">
+            <h1>Registro de Usuario</h1>
+            <div id="personal_data">
+                <h2>Datos Personales</h2>
+                <input type="text" name="curp" placeholder="CURP" required pattern=
+                       "^[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM]{1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3}[0-9A-Z]{1}[0-9]{1}$" 
+                       autofocus>
+                <br>
+                <input type="text" name="name" placeholder="Nombre(s)" required>
+                <input type="text" name="paternal_surname" placeholder="Apellido Paterno" required>
+                <input type="text" name="maternal_surname" placeholder="Apellido Materno">
+                <div>
+                    <input type="date" name="birthdate" required>
+                    <input type="radio" name="sex" value="male">Masculino
+                    <input type="radio" name="sex" value="female">Femenino
+                </div>
+            </div>
+
+            <div id="user_data">
+                <h2>Datos de Usuario</h2>
+                <input type="text" name="user" placeholder="Usuario" required>
+                <br>
+                <input type="password" name="password1" placeholder="Contraseña" required>
+                <input type="password" name="password2" placeholder="Confirmar Contraseña" required>
+                <br>
+                <input type="email" name="email" placeholder="user@example.com" required>
+            </div>
+
+            <div id="btns">
+                <button type="submit" name="create_button">Registrarse</button>
+                <button type="button" name="cancel_button">Cancelar</button>
+            </div>
+        </form>
+    </body>
+</html>

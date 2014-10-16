@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu1,
+.menu1 ul,
+.menu1 li,
+.menu1 a {
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 {
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.menu1 li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+}
+
+.menu1 li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+
+    border-left: 2px solid #999;
+    border-right: 1px solid #000;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+
+    color: #003399;
+    text-shadow: 2px 2px 2px #ffffff;
+
+    transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+}
+
+.menu1 li:first-child a { 
+    border-left: none; 
+}
+.menu1 li:last-child a{ 
+    border-right: none; 
+}
+
+.menu1 li:hover > a { 
+    color: #353539; 
+}
+
+.menu1 ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    
+    background-image: linear-gradient(top, #FFF, #ccc);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ccc));
+    background-image: -webkit-linear-gradient(top, #FFF, #ccc);
+    background-image: -moz-linear-gradient(top, #FFF, #ccc);
+    background-image: -ms-linear-gradient(top, #FFF, #ccc);
+    background-image: -o-linear-gradient(top, #FFF, #ccc);
+    
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    
+    transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+}
+
+.menu1 li:hover > ul { 
+    opacity: 1; 
+}
+
+.menu1 ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+}
+
+.menu1 li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+
+.menu1 ul li a {
+    width: 100px;
+    padding: 4px 0 4px 40px;
+    margin: 0;
+
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+
+.menu1 ul li:last-child a { 
+    border: none; 
+}
+
+
+.menu1 a.documents { 
+    background: url(../img/docs.png) no-repeat 6px center; 
+}
+.menu1 a.messages { 
+    background: url(../img/bubble.png) no-repeat 6px center; 
+}
+.menu1 a.signout { 
+    background: url(../img/arrow.png) no-repeat 6px center; 
+}
