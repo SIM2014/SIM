@@ -9,20 +9,24 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/session.css">
+        <link rel="stylesheet" href="../styles/forms.css">
     </head>
     <body>
-        <form>
+        <form id="session" name="session" action="../sql/register_user.php" method="post" enctype="multipart/form-data">
             <h1>Inicio de Sesi&oacute;n</h1>
             <input type="text" name="user" maxlength="25" placeholder="Ingrese su Usuario">
             <br>
             <input type="password" name="password" maxlength="25" placeholder="Ingrese su Contraseña">
-            <div id="rem"><input type="checkbox" name="remember">Recuerdame</div>
+            <div id="rem">
+                <input type="checkbox" name="remember">Recuerdame
+            </div>
             <button type="submit" name="btn_start">Iniciar Sesi&oacute;n</button>
             <button type="button" name="btn_cancel">Cancelar</button>
             <br>
-            <a href="#">Registrarse</a>
-            <a href="#">Olvide mi contraseña</a>
+            <div id="help">
+                <a href="#">Registrarse</a>
+                <a href="#">Olvide mi contraseña</a>
+            </div>
         </form>
     </body>
 </html>
